@@ -6,6 +6,11 @@ $(document).ready( function(){
 });
 
 
+
+$(function(printNews){
+	$("#nuevas-recetas").text('NUEVAS RECETAS');
+})
+
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
