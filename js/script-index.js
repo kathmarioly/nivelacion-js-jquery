@@ -8,7 +8,7 @@ $(document).ready( function(){
 
 
 $(function(printNews){
-	$("#nuevas-recetas").text('NUEVAS RECETAS');
+	$("#nuevas-recetas").append('NUEVAS RECETAS');
 })
 
 /*
