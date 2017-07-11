@@ -42,17 +42,17 @@ function renderRecipe(recipe) {
 }
 
 
-
-
-
-
 /*
 * Función que se encarga de pintar todas las actividades
 */
 function renderActivities(activitiesArray) {
 	console.log('Activities: ', activitiesArray);
-
-	
+	activitiesArray.forEach(function(el){
+		if (el.highlighted == true) { 
+			renderActivities(el); 
+			//llame a los elememntos hieghlighted, para cumplir la condicion. 
+		}	
+	})
 }
 
 /*
