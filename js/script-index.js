@@ -47,12 +47,10 @@ function renderRecipe(recipe) {
 */
 function renderActivities(activitiesArray) {
 	console.log('Activities: ', activitiesArray);
-	activitiesArray.forEach(function(el){
-		if (el.highlighted == true) { 
-			renderActivities(el); 
-			//llame a los elememntos hieghlighted, para cumplir la condicion. 
-		}	
-	})
+	activitiesArray.forEach(function(val){ 
+		renderActivities(val); 
+
+	});
 }
 
 /*
